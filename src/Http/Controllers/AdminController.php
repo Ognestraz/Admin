@@ -103,12 +103,10 @@ class AdminController extends \Illuminate\Routing\Controller {
 
     }    
     
-    public function templatePath() {
-
-        return 'admin::' . str_replace(['\\', 'controller'], ['.', ''], strtolower($this->name(true)));
-        //return str_replace('app.http.controllers.', '', str_replace('\\', '.',  strtolower($this->name(true))));
-
-    }       
+    public function templatePath()
+    {
+        return 'admin::' . str_replace('controller', '', strtolower($this->name())); 
+    }      
 
     public function getModelClass() {
         return '\App\Models\\'.ucfirst($this->modelName);
