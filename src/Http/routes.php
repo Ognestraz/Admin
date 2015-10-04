@@ -11,4 +11,5 @@ Route::group([
     
     Route::resource('/site', 'SiteController');
     Route::any('/', array('uses' => 'MainController@index'));
+    Route::any('/logout', array('uses' => 'MainController@logout'));
 });
