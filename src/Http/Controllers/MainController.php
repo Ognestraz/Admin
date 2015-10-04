@@ -25,7 +25,7 @@ class MainController extends AdminController
 
         }
 
-        return View::make('admin.login');
+        return View::make('admin::login');
     }         
 
     public function index()
@@ -34,7 +34,7 @@ class MainController extends AdminController
 
             switch (Auth::user()->role_id) {
 
-                case 1: return View::make('admin.index');
+                case 1: return View::make('admin::index');
                 case 2: return Redirect::to('/');
                 case 3: return Redirect::to('/');
                 default: return $this->login();

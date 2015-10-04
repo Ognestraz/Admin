@@ -1,4 +1,4 @@
-<?=view('admin.header')?>
+<?=view('admin::header')?>
 
             <div id="page-wrapper">
                 <div class="row">
@@ -542,4 +542,4 @@
                 <!-- /.row -->
             </div>
             <!-- /#page-wrapper -->
-<?=view('admin.footer')?>
+<?=view('admin::footer')?>
