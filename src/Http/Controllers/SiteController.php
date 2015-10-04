@@ -3,7 +3,7 @@
 use Input;
 use View;
 
-class Site extends AdminController {
+class SiteController extends AdminController {
 
     use Traits\Tree, Traits\Act, Traits\Menu, Traits\SoftDeletes;
     

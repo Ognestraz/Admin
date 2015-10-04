@@ -7,6 +7,8 @@ class AdminServiceProvider extends ServiceProvider
     public function boot()
     {
         require __DIR__ . '/Http/routes.php';
+        
+        $this->loadViewsFrom(__DIR__.'/Views', 'admin');
     }    
     
     public function register()

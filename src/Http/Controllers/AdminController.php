@@ -6,8 +6,6 @@ use Response;
 
 class AdminController extends \Illuminate\Routing\Controller {
     
-    use DispatchesCommands, ValidatesRequests;
-
     protected $errors = [];
     protected $result = [];
     protected $validationMessages = null;
@@ -107,7 +105,8 @@ class AdminController extends \Illuminate\Routing\Controller {
     
     public function templatePath() {
 
-        return str_replace('app.http.controllers.', '', str_replace('\\', '.',  strtolower($this->name(true))));
+        return 'admin::' . str_replace(['\\', 'controller'], ['.', ''], strtolower($this->name(true)));
+        //return str_replace('app.http.controllers.', '', str_replace('\\', '.',  strtolower($this->name(true))));
 
     }       
 
