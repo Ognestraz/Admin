@@ -16,6 +16,6 @@
 
             <!-- Navigation -->
             <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
-                <?=view('admin.topmenu')?>
-                <?=view('admin.leftmenu')?>
+                <?=view('admin::topmenu')?>
+                <?=view('admin::leftmenu')?>
             </nav>
