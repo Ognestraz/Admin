@@ -7,6 +7,11 @@ Route::group([
 
     Route::group(['middleware' => 'auth.admin'], function () {
         
+        Route::any('/site/tree', array('uses' => 'SiteController@tree'));
+        Route::any('/site/template/{id}', array('uses' => 'SiteController@template'));
+        Route::any('/site/settings/{id}', array('uses' => 'SiteController@settings'));
+        Route::any('/site/reimage/{id}', array('uses' => 'SiteController@reimage'));
+        Route::any('/site/create/{id}', array('uses' => 'SiteController@create'));        
         Route::any('/site/act/{id}', array('uses' => 'SiteController@act'));
         Route::any('/site/restore/{id}', array('uses' => 'SiteController@restore'));
         Route::delete('/site/delete/{id}', array('uses' => 'SiteController@delete'));
