@@ -2,26 +2,26 @@ var elixir = require('laravel-elixir');
 
 elixir(function(mix) {
     mix
-//    .scripts([
-//        //"lib/bootstrap.js",
-//        "lib/jquery/jquery.form.js",
-//        "lib/jquery/jquery-ui.min.js",
-//        "lib/jquery/jquery.cookie.js",
-//        "lib/jquery/tree.jquery.js",
-//        "lib/jquery/jquery.validate.js",
-//        "lib/FileAPI/FileAPI.min.js",
-//        "lib/FileAPI/FileAPI.exif.js",
-//        "lib/jquery/jquery.fileapi.min.js",
-//        "lib/jquery/jquery.prettyloader.js",
-//        "lib/jquery/jquery.jcrop.min.js",
-//        //"lib/tinymce.min.js",
-//        "app/init.js",
-//        "app/crop.js",
-//        "app.js",
-//        "app/controller/file.js",
-//        "app/controller/video.js",
-//        "app/actions.js",
-//    ], 'public/js/admin.js', path.admin + 'js')
+    .scripts([
+        //"lib/bootstrap.js",
+        "lib/jquery/jquery.form.js",
+        "lib/jquery/jquery-ui.min.js",
+        "lib/jquery/jquery.cookie.js",
+        "lib/jquery/tree.jquery.js",
+        "lib/jquery/jquery.validate.js",
+        "lib/FileAPI/FileAPI.min.js",
+        "lib/FileAPI/FileAPI.exif.js",
+        "lib/jquery/jquery.fileapi.min.js",
+        "lib/jquery/jquery.prettyloader.js",
+        "lib/jquery/jquery.jcrop.min.js",
+        //"lib/tinymce.min.js",
+        "app/init.js",
+        "app/crop.js",
+        "app.js",
+        "app/controller/file.js",
+        "app/controller/video.js",
+        "app/actions.js"
+    ], 'public/js/admin.js')
     .scripts([
         "bower_components/jquery/dist/jquery.min.js",
         "bower_components/bootstrap/dist/js/bootstrap.min.js",
@@ -33,13 +33,7 @@ elixir(function(mix) {
         "bower_components/jquery-prettyPhoto/js/jquery.prettyPhoto.js",
         "js/morris-data.js",
         "dist/js/sb-admin-2.js"
-    ], 'public/js/sb2-admin-vendor.js', 'resources/assets/sb-admin-2');
-//    .scripts([
-//        "site/jquery.js",
-//        "site/bootstrap.min.js",
-//        "site/contact_me.js",
-//        "site/jqBootstrapValidation.js"
-//    ], 'public/js/all.js');    
+    ], 'public/js/admin-sb2.js', 'resources/assets/sb-admin-2');
 });
 //
 //elixir(function(mix) {

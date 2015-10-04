@@ -10,7 +10,7 @@
                 staticPath: '<?=URL::to('/')?>/assets/js/FileAPI/' 
             };			
         </script>        
-        <script src='<?=elixir("js/sb2-admin.js");?>'></script>
+        <script src='<?=elixir("js/admin-sb2.js");?>'></script>
         <script src="//tinymce.cachefly.net/4.1/tinymce.min.js"></script>
         <script src='<?=elixir("js/admin.js");?>'></script>
     </body>
