@@ -9,6 +9,10 @@ class AdminServiceProvider extends ServiceProvider
         require __DIR__ . '/Http/routes.php';
         
         $this->loadViewsFrom(__DIR__.'/resources/views', 'admin');
+        $this->publishes([
+            __DIR__.'/public' => base_path('public'),
+        ]);        
+        
     }    
     
     public function register()
