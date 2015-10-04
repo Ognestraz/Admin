@@ -33,7 +33,7 @@ elixir(function(mix) {
         "bower_components/jquery-prettyPhoto/js/jquery.prettyPhoto.js",
         "js/morris-data.js",
         "dist/js/sb-admin-2.js"
-    ], 'public/js/sb2-admin.js', 'resources/assets/sb-admin-2');
+    ], 'public/js/sb2-admin-vendor.js', 'resources/assets/sb-admin-2');
 //    .scripts([
 //        "site/jquery.js",
 //        "site/bootstrap.min.js",
@@ -85,15 +85,3 @@ elixir(function(mix) {
 //        .copy(path.admin + "sb-admin-2/bower_components/jquery-prettyPhoto/images/prettyPhoto/default", "public/build/images/prettyPhoto/default");
 //});
 
-elixir(function(mix) {
-    mix.version([
-//        "public/css/admin.css",
-//        "public/css/bootstrap.css",
-//        "public/css/admin-login.css",
-//        "public/css/sb2-admin.css",
-//        "public/css/all.css",
-//        "public/js/admin.js",
-        "public/js/sb2-admin.js",
-//        "public/js/all.js"
-    ]);
-});

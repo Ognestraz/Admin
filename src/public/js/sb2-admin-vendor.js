@@ -1274,4 +1274,4 @@ $(function() {
     }
 });
 
-//# sourceMappingURL=sb2-admin.js.map
+//# sourceMappingURL=sb2-admin-vendor.js.map
