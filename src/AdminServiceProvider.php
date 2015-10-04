@@ -1,0 +1,18 @@
+<?php
+
+use Illuminate\Support\ServiceProvider;
+ 
+class AdminServiceProvider extends ServiceProvider
+{
+    public function boot()
+    {
+        require __DIR__ . '/Http/routes.php';
+    }    
+    
+    public function register()
+    {
+        $this->app->bind('admin', function () {
+            return new Admin;
+        });
+    }
+}

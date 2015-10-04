@@ -1,0 +1,18 @@
+{
+    "name": "ognestraz/admin",
+    "description": "Admin for Laravel 5.1",
+    "authors": [
+        {
+            "name": "ognestraz",
+            "email": "ognestraz@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "classmap": [],
+        "files": [],
+        "psr-4": {
+            "Ognestraz\\Admin": "src/"
+        }
+    }
+}
