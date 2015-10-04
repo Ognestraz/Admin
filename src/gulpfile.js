@@ -35,43 +35,38 @@ elixir(function(mix) {
         "dist/js/sb-admin-2.js"
     ], 'public/js/admin-sb2.js', 'resources/assets/sb-admin-2');
 });
-//
-//elixir(function(mix) {
-//    mix.less(path.admin + 'less/app/image.icon-list.less', 'resources/assets/css/admin/app/image.icon-list.css');
-//});
-//
-//elixir(function(mix) {
-//    mix.styles([
-//        //"admin/bootstrap.css",
-//        "bootstrap-theme.css",
-//        "ui-lightness/jquery-ui-1.10.3.custom.min.css",
-//        "prettyloader.css",
-//        "jquery.jcrop.css",
-//        "main.css",
-//        "app/image.icon-list.css",
-//        "jqtree.css"
-//    ], 'public/css/admin.css', path.admin + 'css')
-//    .styles([
-//        "bower_components/bootstrap/dist/css/bootstrap.min.css"
-//    ], 'public/css/bootstrap.css', path.admin + 'sb-admin-2')
-//    .styles([
-//        "css/admin/login/style.css"
-//    ], 'public/css/admin-login.css', path.admin)
-//    .styles([
-//        "bower_components/bootstrap/dist/css/bootstrap.min.css",
-//        "bower_components/metisMenu/dist/metisMenu.min.css",
-//        "bower_components/jquery-prettyPhoto/css/prettyPhoto.css",
-//        "dist/css/timeline.css",
-//        "dist/css/sb-admin-2.css",
-//        "bower_components/morrisjs/morris.css",
-//        "bower_components/font-awesome/css/font-awesome.min.css"
-//    ], 'public/css/sb2-admin.css', path.admin + 'sb-admin-2')
-//    .styles([
-//        "site/bootstrap.min.css",
-//        "site/modern-business.css",
-//        "site/font-awesome.min.css"
-//    ], 'public/css/all.css');
-//});
+
+elixir(function(mix) {
+    mix.less('app/image.icon-list.less', 'resources/assets/css/admin/app/image.icon-list.css');
+});
+
+elixir(function(mix) {
+    mix.styles([
+        //"admin/bootstrap.css",
+        "bootstrap-theme.css",
+        "ui-lightness/jquery-ui-1.10.3.custom.min.css",
+        "prettyloader.css",
+        "jquery.jcrop.css",
+        "main.css",
+        "app/image.icon-list.css",
+        "jqtree.css"
+    ], 'public/css/admin.css')
+    .styles([
+        "bower_components/bootstrap/dist/css/bootstrap.min.css"
+    ], 'public/css/bootstrap.css', 'resources/assets/sb-admin-2')
+    .styles([
+        "login/style.css"
+    ], 'public/css/admin-login.css')
+    .styles([
+        "bower_components/bootstrap/dist/css/bootstrap.min.css",
+        "bower_components/metisMenu/dist/metisMenu.min.css",
+        "bower_components/jquery-prettyPhoto/css/prettyPhoto.css",
+        "dist/css/timeline.css",
+        "dist/css/sb-admin-2.css",
+        "bower_components/morrisjs/morris.css",
+        "bower_components/font-awesome/css/font-awesome.min.css"
+    ], 'public/css/admin-sb2.css', 'resources/assets/sb-admin-2');
+});
 //
 //elixir(function(mix) {
 //    mix.copy(path.admin + "sb-admin-2/bower_components/font-awesome/fonts", "public/build/fonts")

@@ -7,7 +7,7 @@
         <meta name="description" content="">
         <meta name="author" content="">
         <title>SB Admin 2 - Bootstrap Admin Theme</title>
-        <link rel='stylesheet' href='<?=elixir("css/sb2-admin.css");?>' type='text/css' media='all' />
+        <link rel='stylesheet' href='<?=elixir("css/admin-sb2.css");?>' type='text/css' media='all' />
         <link rel='stylesheet' href='<?=elixir("css/admin.css");?>' type='text/css' media='all' />
         <script type='text/javascript'> var _token = '<?=csrf_token();?>';</script>
     </head>
