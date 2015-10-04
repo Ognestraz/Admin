@@ -304,7 +304,7 @@ class AdminController extends \Illuminate\Routing\Controller {
 
     public function result($data = [], $errors = [], $params = []) {
         
-        $controller = str_replace('controller', '', $this->_getControllerName());
+        $controller = 'admin/' . str_replace('controller', '', $this->_getControllerName());
         $result = $this->result + ['controller' => $controller];
         
         $backtrace = debug_backtrace(0, 2);
