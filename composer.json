@@ -12,7 +12,7 @@
         "classmap": [],
         "files": [],
         "psr-4": {
-            "Ognestraz\\Admin": "src/"
+            "Ognestraz\\Admin\\": "src/"
         }
     }
 }
