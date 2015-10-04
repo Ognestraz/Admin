@@ -1,6 +1,6 @@
 <?php namespace Ognestraz\Admin\Http\Controllers;
 
-class BlockController extends AdminBaseController {
+class BlockController extends AdminController {
 
     use Traits\Tree, Traits\Act;
     
