@@ -2,7 +2,7 @@
 
 use App\Http\Controllers\Controller;
 
-class AclController extends Controller
+class AdminController extends Controller
 {
     public function index()
     {
