@@ -624,6 +624,10 @@ input.long {
     width: 400px;
     
 }
+
+.login-panel {
+    margin-top: 25%;
+}
 .image-icon-list ul li {
   margin: 3px 3px 3px 0;
   height: 100px;

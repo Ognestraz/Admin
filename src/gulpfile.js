@@ -55,9 +55,6 @@ elixir(function(mix) {
         "bower_components/bootstrap/dist/css/bootstrap.min.css"
     ], 'public/css/bootstrap.css', 'resources/assets/sb-admin-2')
     .styles([
-        "login/style.css"
-    ], 'public/css/admin-login.css')
-    .styles([
         "bower_components/bootstrap/dist/css/bootstrap.min.css",
         "bower_components/metisMenu/dist/metisMenu.min.css",
         "bower_components/jquery-prettyPhoto/css/prettyPhoto.css",
