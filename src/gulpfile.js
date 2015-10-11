@@ -70,4 +70,4 @@ elixir(function(mix) {
 //        .copy("resources/assets/fonts", "public/build/fonts")
 //        .copy(path.admin + "sb-admin-2/bower_components/jquery-prettyPhoto/images/prettyPhoto/default", "public/build/images/prettyPhoto/default");
 //});
-
+//
