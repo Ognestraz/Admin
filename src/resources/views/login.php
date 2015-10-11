@@ -8,13 +8,12 @@
     <meta name="author" content="">
     <title>SB Admin 2 - Bootstrap Admin Theme</title>
     <link rel='stylesheet' href='<?=elixir("css/bootstrap.css");?>' type='text/css' media='all' />
-    <link rel='stylesheet' href='<?=elixir("css/admin-login.css");?>' type='text/css' media='all' />
 </head>
 <body>
     <div class="container">
         <div class="row">
             <div class="col-md-4 col-md-offset-4">
-                <div class="login-panel panel panel-default">
+                <div class="login-panel panel panel-default" style="margin-top: 25%;">
                     <div class="panel-heading">
                         <h3 class="panel-title">Авторизация</h3>
                     </div>
