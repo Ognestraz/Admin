@@ -64,10 +64,9 @@ elixir(function(mix) {
         "bower_components/font-awesome/css/font-awesome.min.css"
     ], 'public/css/admin-sb2.css', 'resources/assets/sb-admin-2');
 });
-//
-//elixir(function(mix) {
-//    mix.copy(path.admin + "sb-admin-2/bower_components/font-awesome/fonts", "public/build/fonts")
-//        .copy("resources/assets/fonts", "public/build/fonts")
-//        .copy(path.admin + "sb-admin-2/bower_components/jquery-prettyPhoto/images/prettyPhoto/default", "public/build/images/prettyPhoto/default");
-//});
-//
+
+elixir(function(mix) {
+    mix.copy("resources/assets/sb-admin-2/bower_components/font-awesome/fonts", "public/build/fonts")
+        .copy("resources/assets/sb-admin-2/bower_components/jquery-prettyPhoto/images/prettyPhoto/default", "public/build/images/prettyPhoto/default");
+});
+
