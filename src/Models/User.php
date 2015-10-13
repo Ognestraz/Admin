@@ -1,4 +1,4 @@
-<?php namespace App\Models;
+<?php namespace Ognestraz\Admin\Models;
 
 use Illuminate\Auth\UserInterface;
 use Illuminate\Auth\Reminders\RemindableInterface;

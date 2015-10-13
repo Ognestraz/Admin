@@ -1,4 +1,4 @@
-<?php namespace App\Models;
+<?php namespace Ognestraz\Admin\Models;
 
 class Role extends Model {
 

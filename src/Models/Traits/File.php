@@ -1,6 +1,4 @@
-<?php
-
-namespace App\Models\Traits;
+<?php namespace Ognestraz\Admin\Models\Traits;
 
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\File as FileFacade;

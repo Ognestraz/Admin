@@ -1,4 +1,4 @@
-<?php namespace App\Models;
+<?php namespace Ognestraz\Admin\Models;
 
 use Eloquent;
 use Input;

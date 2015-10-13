@@ -10,7 +10,9 @@ class AdminServiceProvider extends ServiceProvider
         
         $this->loadViewsFrom(__DIR__.'/resources/views', 'admin');
         $this->publishes([
-            __DIR__.'/public' => base_path('public'),
+            __DIR__.'/public/build' => base_path('public/build'),
+            __DIR__.'/public/css' => base_path('public/css'),
+            __DIR__.'/public/js' => base_path('public/js'),
             __DIR__.'/database' => base_path('database')
         ]);        
         

@@ -1,4 +1,4 @@
-<?php namespace App\Models;
+<?php namespace Ognestraz\Admin\Models;
 
 class Video extends Model {
 
@@ -10,7 +10,7 @@ class Video extends Model {
     public function videoable() 
     {
         
-        return $this->morphTo('App\Models\Video', 'model', 'model_id');
+        return $this->morphTo('Ognestraz\Admin\Models\Video', 'model', 'model_id');
     
     }    
     

@@ -1,4 +1,4 @@
-<?php namespace App\Models;
+<?php namespace Ognestraz\Admin\Models;
 
 use URL;
 use DB;
@@ -30,7 +30,7 @@ class Menu extends Model {
     public function site()
     {
         
-        return $this->belongsTo('App\Models\Site', 'element_id');
+        return $this->belongsTo('Ognestraz\Admin\Models\Site', 'element_id');
         
     }    
     
@@ -62,7 +62,7 @@ class Menu extends Model {
                 
             } else {
                 
-                $module = 'App\Models\\'.ucfirst($this->module);
+                $module = 'Ognestraz\\Admin\\Models\\'.ucfirst($this->module);
                 $element = $module::find($this->element_id);
                 
                 if (!empty($element->id)) {

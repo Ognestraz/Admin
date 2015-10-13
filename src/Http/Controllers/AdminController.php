@@ -109,7 +109,7 @@ class AdminController extends \Illuminate\Routing\Controller {
     }      
 
     public function getModelClass() {
-        return '\App\Models\\'.ucfirst($this->modelName);
+        return 'Ognestraz\Admin\Models\\'.ucfirst($this->modelName);
     }
     
     protected function model($id = null, $key = null) {

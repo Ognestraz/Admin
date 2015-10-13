@@ -1,5 +1,4 @@
-<?php
-namespace App\Models\Traits;
+<?php namespace Ognestraz\Admin\Models\Traits;
 
 trait Act {
     

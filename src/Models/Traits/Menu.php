@@ -1,13 +1,11 @@
-<?php
-
-namespace App\Models\Traits;
+<?php namespace Ognestraz\Admin\Models\Traits;
 
 trait Menu {
     
     public function menu()
     {
         
-        return $this->hasMany("App\Models\Menu", 'element_id');
+        return $this->hasMany("Ognestraz\Admin\Models\Menu", 'element_id');
         
     }
     
@@ -18,7 +16,7 @@ trait Menu {
         
         if ($this->id) {
         
-            $menuSite = \App\Models\Menu::where('element_id', $this->id)
+            $menuSite = \Ognestraz\Admin\Models\Menu::where('element_id', $this->id)
                     ->where('module', 'site')
                     ->get();
 
@@ -34,7 +32,7 @@ trait Menu {
         
         }
 
-        $menu = \App\Models\Menu::where('parent', 0)
+        $menu = \Ognestraz\Admin\Models\Menu::where('parent', 0)
                 ->get();
 
         $return = array();

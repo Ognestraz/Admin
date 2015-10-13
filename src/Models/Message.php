@@ -1,4 +1,4 @@
-<?php namespace App\Models;
+<?php namespace Ognestraz\Admin\Models;
 
 class Message extends Model {
 
@@ -9,7 +9,7 @@ class Message extends Model {
 
     public function user()
     {
-      return $this->belongsTo('App\Models\User', 'user_id');
+      return $this->belongsTo('Ognestraz\Admin\Models\User', 'user_id');
     }    
     
    /* static public $rules = array(
